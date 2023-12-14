@@ -14,7 +14,14 @@ const Login = () => {
         async function fetchBooks() {
             try {
                 const response = await axios.get('http://localhost:8000/books');
-                setBooks(response.data);
+                let booksOld = books
+                booksOld.push({
+                    id: 1,
+                    title: 'asd'
+                })
+                debugger
+                setBooks(booksOld);
+                debugger
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -26,9 +33,9 @@ const Login = () => {
     return (
         <Container fluid>
             <Row>
-                {books.map((book) => (
-                    <Col key={book.id} xl={2} lg={3} md={4} sm={6} xs={12}>{book.title}</Col>
-                ))}
+            {books.map((book) => (
+                <Col key={book.id} xl={2} lg={3} md={4} sm={6} xs={12}>{book.title}</Col>
+            ))}
             </Row>
         </Container>
     );
