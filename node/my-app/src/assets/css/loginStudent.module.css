@@ -1,0 +1,73 @@
+.back {
+    background-color: #D0EEF7;
+    height:100vh;
+}
+
+/* .container{ */
+/* max-width: 1180px;   */
+/* height: auto; */
+
+/* } */
+
+.header {
+    background-color: white;
+    height: 100%;
+    border-radius: 2%;
+    /* margin-bottom: 20px; */
+}
+
+
+.backgroundImage {
+    background: url('../images/side_right.png') no-repeat;
+    border-radius: 2%;
+}
+
+.headerTitle {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.headerSubTitle {
+    /* text-align: justify; */
+    font-size: 12pt;
+    color: white;
+}
+
+.headerContent {
+    text-align: justify;
+    padding: 20px;
+}
+
+.headerButton{
+    color: #393DA1;
+}
+.loginButton{
+    background-color: #393DA1;
+    border-radius: 5%;
+}
+
+.loginButton:hover{
+    background-color: #393DA1;
+}
+
+.loginText{
+    text-align: justify;
+}
+
+.loginText span{
+    font-size: 20px;
+}
+
+.loginStudent{
+    color: #393DA1;
+}
+
+.loginDiv {
+    text-align: justify;
+}
+
+.forgotPassword {
+    font-size: 10pt;
+    color: #AD3113;
+}
