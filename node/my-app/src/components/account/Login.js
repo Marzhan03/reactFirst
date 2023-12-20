@@ -30,7 +30,8 @@ const Login = () => {
   }
 
 
-  const handleLogin = async (login, password) => {
+  const handleLogin = async () => {
+
     try {
       await dispatch(performLogin(login, password));
       // Дополнительные действия после успешного входа
@@ -40,48 +41,6 @@ const Login = () => {
     }
   
 
-//   const handleLogin = async () => {
-//     setLoading(true);
-//     try {
-//         const response = await axios.post(
-//           "http://localhost:8000/api/token/",
-//           { 
-//             username: login,
-//             password: password
-//           }
-
-//         );
-//           // Сохранение токенов в localStorage
-//         localStorage.setItem('access_token', response.data.access);
-//         localStorage.setItem('refresh_token', response.data.refresh);
-      
-  
-//       } catch (error) {
-//         console.error('Ошибка входа:', error);
-
-//         if (error.response && error.response.status === 401) {
-//           setError('Неправильные учетные данные. Пожалуйста, проверьте имя пользователя и пароль.');
-//         } else {
-//           setError('Что-то пошло не так. Попробуйте еще раз позже.'); // Общее сообщение об ошибке
-//         }
-//       } finally {
-//         setLoading(false); // Скрыть спиннер после выполнения запроса
-//       }
-    // axios.post(
-    //     "http://localhost:8000/api/token/",
-    //     { 
-    //         username: login,
-    //         password: password
-    //     }
-
-    // ).then(async (response) => {
-    //     let token = await response.data;
-
-    // })
-    
-    // // dispatch(loginUser(login, password))
-    // // console.log(loggedIn)
-    // // console.log(tokens)
   };
 
   return (
