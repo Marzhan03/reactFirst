@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import Login from './components/account/Login'
 import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import store from './store';
+import store from '../src/store/store';
 
 
 // Ваш остальной код

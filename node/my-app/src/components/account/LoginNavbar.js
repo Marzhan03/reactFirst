@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image';
 import logoImage from '../../assets/images/logo.png';
-import styles from '../../assets/css/navbar.module.css'; 
+import styles from '../../assets/css/loginnavbar.module.css'; 
 
 
-const Navbar = () => {
+const LoginNavbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.navbar}>
@@ -15,4 +15,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default LoginNavbar;

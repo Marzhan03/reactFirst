@@ -23,7 +23,7 @@
 }
 
 .headerTitle {
-    font-size: 1.7rem;
+    font-size: 20pt;
     font-weight: bold;
     color: white;
 }
@@ -55,6 +55,10 @@
     text-align: justify;
 }
 
+.login span{
+    font-size: 80%;
+}
+
 .loginText span{
     font-size: 20px;
 }
@@ -70,4 +74,23 @@
 .forgotPassword {
     font-size: 10pt;
     color: #AD3113;
+}
+
+.profImage{
+   height: 100%;
+   width: 100%;
+   justify-content: center;
+   
+}
+
+.loginContent{
+    text-align:start;
+    padding: 20px;
+}
+
+.profButton{
+    color:#393DA1;
+    height: fit-content;
+
+
 }
