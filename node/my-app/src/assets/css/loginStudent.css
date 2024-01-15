@@ -1,0 +1,9 @@
+.login-container {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.login-container.hidden {
+    opacity: 0;
+    display: none;
+}
