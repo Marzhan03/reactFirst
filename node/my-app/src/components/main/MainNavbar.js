@@ -13,7 +13,6 @@ const MainNavbar = () => {
         <Row>
             <div className={styles.navbar}>
             <Col md={6}>
-                
                     <div>
                     <Row>
                         <Col md={4}>

@@ -1,0 +1,105 @@
+.headerContent{
+    padding-top:100px;
+}
+
+.headerTitle{
+    font-size: 64px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+
+.headerDescription{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    margin-bottom: 50px;
+
+
+}
+
+.headerButton {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #393DA1!important;
+    color: white!important;
+}
+
+.circleContainer {
+    border: 5px solid #50D3FF; 
+    padding: 25px;
+    border-radius: 50%;
+  }
+
+.headerCircleBack {
+    width: 430px;
+    height: 440px;
+    border-radius: 50%;
+    background-color: #393DA1;
+
+  }
+.headerCommentOne{
+    width: 250px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: white;
+    margin-top: 80px;
+    margin-right: -150px;
+    position: absolute;
+
+}
+
+.headerCircleCommentOne{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #47DAAC;
+  
+}
+.headerCommentTwo{
+    width: 200px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: white;
+    margin-top: 300px;
+    margin-right: 320px;
+    position: absolute;
+
+}
+
+.headerCircleCommentTwo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #EB5652;
+    position:absolute;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.headerFooter{
+    width: auto;
+    height: auto;
+    border-radius: 2%;
+    background-color: #393DA1;
+    margin-top: 80px;
+    padding:40px 30px;
+
+}
+
+.headerFooterImg{
+    border-radius: 10%;
+    background-color: #728FCE;
+    position: relative;
+    margin:0 10px;
+    padding: 10px 0;
+}
+
+.headerFooterContent{
+    text-align: left;
+}
