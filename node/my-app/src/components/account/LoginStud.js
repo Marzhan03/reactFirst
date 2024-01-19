@@ -59,12 +59,12 @@ const LoginStud = () => {
                             <div><LoginNavbar /></div>
                         </Col>
                             <motion.div
-                            initial={{ opacity: 1, translateX: -60 }}
+                            initial={{ opacity: 0.5, translateX: -250 }}
                             animate={{ opacity: 1, translateX: 0 }}
-                            exit={{ opacity: 0, translateX: -50 }}
-                            transition={{ duration: 0.6, ease: "easeInOut" }}
-                            key="LoginStud"
-                            style={{ opacity: 1, translateX: 0 }} 
+                            exit={{ opacity: 0.5, translateX: -50 }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
+                            key="LoginProf"
+                            style={{ opacity: 1, translateX: 0 }}
                             >
                                 <Col className={`p-4 ${style.header}`} md={12}>
                                     <Row className=''>

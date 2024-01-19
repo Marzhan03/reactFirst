@@ -8,7 +8,7 @@ const Main = () => {
     return (
         <div className={`container-fluid ${styles.background}`}>
             <Row className="justify-content-center mx-4">
-                <Col md={6} >
+                <Col md={10} >
                     <Row>
                         <Col md={12}>
                             <div><MainNavbar /></div>
