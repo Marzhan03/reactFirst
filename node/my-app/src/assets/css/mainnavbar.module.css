@@ -1,4 +1,34 @@
 
 .navLink{
     margin-right: 50px;
+    text-decoration: none;
+    color: #4C53FF;
+    font-weight: 600;
+}
+
+.navLeftLink{
+    margin-right: 50px;
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.navLeftLink::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4C53FF; 
+    transition: width 0.3s ease;
+}
+
+.navLeftLink:hover::before {
+    width: 100%;
+}
+
+.navLeftLink:hover {
+    color: #4C53FF; 
 }

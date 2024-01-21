@@ -1,0 +1,45 @@
+.circleBackground {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 592px;
+  height: 592px;
+  background-color: #F5FDFF;
+  border-radius: 50%;
+}
+
+.circleImage {
+  position: absolute;
+  top: 10%;
+  /* Adjust this value to control the vertical positioning of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 640px;
+  height: 593px;
+}
+
+.dropdownCard{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  width: 359px;
+  height: 239px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.customWidth {
+  position: relative;
+  /* transform: translate(10%, 10%); */
+  width: 100%;
+  height: 70%;
+}
+
+.customSet{
+  position: relative;
+  /* transform: translate(660%, 35%); */
+  width: 70%;
+  height: 40%;
+}
