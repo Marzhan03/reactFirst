@@ -1,12 +1,85 @@
 .circleBackground {
   position: absolute;
-  top: 110%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 592px;
-  height: 592px;
+  transform: translate(-50%, 0%);
+  width: 500px;
+  height: 500px;
   background-color: #F5FDFF;
   border-radius: 50%;
+}
+
+.doughnutContainer {
+  margin-top: 100px;
+  width: 200px!important;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.doughnut {
+  content: "";
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin-left: 20px;
+  border: 2vw solid #3498db;
+  clip-path: polygon(
+    100% 0%, 
+    50% 0%, 
+    50% 50%, 
+    100% 50% 
+  );
+}
+
+.doughnutOne {
+  position: absolute;
+  content: "";
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2vw solid #dbb134;
+  clip-path: polygon(
+    0% 100%,
+    50% 100%,
+    50% 50%,
+    0% 50%
+  );
+}
+
+.doughnutTwo {
+  content: "";
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2vw solid #34db93;
+  clip-path: polygon(
+    0% 0%,
+    50% 0%,
+    50% 50%,
+    0% 50%
+  );
+}
+
+.doughnutThree {
+  content: "";
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2vw solid #e04d03;
+  clip-path: polygon(
+    100% 100%,
+    50% 100%,
+    50% 50%,
+    100% 50%
+  );
+}
+
+.doughnutMargin{
+  margin-bottom: -50px;
 }
 
 .circleImage {
@@ -15,17 +88,18 @@
   /* Adjust this value to control the vertical positioning of the image */
   left: 50%;
   transform: translateX(-50%);
-  width: 640px;
-  height: 593px;
+  width: 600px;
+  height: 503px;
 }
 
-.dropdownCard{
+
+.dropdownCard {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(50%, -50%);
-  width: 359px;
-  height: 239px;
+  transform: translate(50%, -100%);
+  width: 289px;
+  height: 179px;
   background-color: #FFFFFF;
   border-radius: 20px;
 }
@@ -33,13 +107,19 @@
 .customWidth {
   position: relative;
   /* transform: translate(10%, 10%); */
-  width: 100%;
-  height: 70%;
+  width: 76px;
+  height: 76px;
 }
 
-.customSet{
+.customSet {
   position: relative;
   /* transform: translate(660%, 35%); */
-  width: 70%;
-  height: 40%;
+  width: 36px;
+  height: 36px;
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: -20%;
 }
