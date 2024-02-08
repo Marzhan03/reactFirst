@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import manImage from '../../assets/images/man.png';
+import qyz2Image from '../../assets/images/qyz2.png';
 import dropdownCard from '../../assets/images/dropdownCardImg1.png';
 import dropdownButton from '../../assets/images/dropdownButton.png';
 import styles from '../../assets/css/main.module.css';
@@ -9,16 +9,23 @@ import style from '../../assets/css/man.module.css';
 const HeaderListThree = () => {
     return (
         <>
-            <div className={`container-fluid ${styles.background}`}>
+            <div className={`${styles.background}`}>
                 <div className="d-flex justify-content-center align-items-start vh-100">
-                    <div className="text-center mt-2">
+                    <div className="text-center mt-2 justify-content-center">
                         <div class= {`${style.doughnutContainer}`}>
-                            <div className={`${style.doughnutMargin}`}><div className='p-1'><div class={`${style.doughnut}`}></div></div>
-                            <div className='p-1'><div class={`${style.doughnutTwo}`}></div></div></div>
+                            
+                            <div className='p-1'><div class={`${style.doughnut}`}></div></div>
+                            <div className='p-1'><div class={`${style.doughnutTwo}`}></div></div>
                             <div className='p-1'><div class={`${style.doughnutOne}`}></div></div>
                             <div className='p-1'><div class={`${style.doughnutThree}`}></div></div>
                         </div>
-                        <h1>Кому мы помогаем</h1>
+                        <div>
+                            <div className='p-1'><div class={`${style.circleBackground}`}></div></div>
+                            <div className='p-1'><div class={`${style.circleImage}`}>
+                            <Image style={{ width: '60%', height: '100%' }} src={qyz2Image} /></div></div>
+                            
+                        <h1>Кому мы помогаем</h1></div>
+                        
                         <p className="w-75 mx-auto">
                             Выявляем направления для развития, подходящие вашему типу мышления и природным
                             особенностям мозга. Выбирайте то, в чем будете лучшими!
