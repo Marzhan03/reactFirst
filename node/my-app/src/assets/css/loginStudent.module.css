@@ -45,7 +45,8 @@
 
 .loginButton {
     background-color: #393DA1;
-    border-radius: 5%;
+    border-radius: 50%;
+    height: '30px';
 }
 
 .loginButton:hover {

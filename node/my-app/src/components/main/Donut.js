@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { ArcElement } from "chart.js";
+import Chart from "chart.js/auto";
 
 const DoughnutChart = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -9,8 +11,10 @@ const DoughnutChart = () => {
     datasets: [{
       data: [50, 50, 50, 50],
       backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(1, 205, 0)'],
+      hoverOffset: 25,
       cutout: '82%',
       borderWidth: 25,
+      borderColor: '#EAF8FC'
     }]
   };
 
@@ -24,21 +28,9 @@ const DoughnutChart = () => {
       },
       doughnutlabel: {},
     },
-    onHover: (_event, chartElements) => {
-      if (chartElements && chartElements.length) {
-        const index = chartElements[0].index;
-        setHoveredIndex(index);
-      } else {
-        setHoveredIndex(null);
-      }
-    },
     elements: {
       arc: {
-        hoverBorderWidth: 25,
-        hoverBorderColor: 'rgba(234, 248, 252, 1)',
-        outerRadius: (context) => {
-          return context.dataIndex === hoveredIndex ? context.outerRadius + 50 : context.outerRadius;
-        },
+        hoverBorderWidth: 0,
       }
     }
   };
