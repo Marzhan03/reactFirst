@@ -13,6 +13,8 @@ const Main = () => {
                 <Col md={12}>
                     <div><MainNavbar/></div>
                 </Col>
+                <Col></Col>
+                    
                 </Row>
                 </Col>
             </Row>

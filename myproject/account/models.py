@@ -17,9 +17,10 @@ class CustomUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username, password=None):
+    def create_superuser(self, username, email, password=None):
         user = self.create_user(
             username,
+            email,
             password=password,
         )
 
@@ -54,7 +55,7 @@ class CustomerUser(AbstractBaseUser):
     objects = CustomUserManager()
 
     USERNAME_FIELD = "username"
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['email']
 
     def __str__(self):
         return self.email
