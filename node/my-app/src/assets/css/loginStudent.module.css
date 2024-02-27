@@ -1,6 +1,6 @@
 .back {
     background-color: #D0EEF7;
-    height:100vh;
+    height: 100vh;
 }
 
 /* .container{ */
@@ -39,31 +39,32 @@
     padding: 20px;
 }
 
-.headerButton{
+.headerButton {
     color: #393DA1;
 }
-.loginButton{
+
+.loginButton {
     background-color: #393DA1;
     border-radius: 5%;
 }
 
-.loginButton:hover{
+.loginButton:hover {
     background-color: #393DA1;
 }
 
-.loginText{
+.loginText {
     text-align: justify;
 }
 
-.login span{
+.login span {
     font-size: 80%;
 }
 
-.loginText span{
+.loginText span {
     font-size: 20px;
 }
 
-.loginStudent{
+.loginStudent {
     color: #393DA1;
 }
 
@@ -76,21 +77,29 @@
     color: #AD3113;
 }
 
-.profImage{
-   height: 100%;
-   width: 100%;
-   justify-content: center;
-   
+.profImage {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
 }
 
-.loginContent{
-    text-align:start;
+.loginContent {
+    text-align: start;
     padding: 20px;
 }
 
-.profButton{
-    color:#393DA1;
+.profButton {
+    color: #393DA1;
     height: fit-content;
+}
 
+.loginContainer {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
 
+.loginContainer.hidden {
+    opacity: 0;
+    display: none;
 }

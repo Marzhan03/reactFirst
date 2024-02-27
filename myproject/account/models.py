@@ -20,7 +20,11 @@ class CustomUserManager(BaseUserManager):
     def create_superuser(self, username, email, password=None):
         user = self.create_user(
             username,
+<<<<<<< HEAD
             email,
+=======
+            email=email,
+>>>>>>> 016b4aa139e334a2d58d6125003f78bcc39f2f33
             password=password,
         )
 

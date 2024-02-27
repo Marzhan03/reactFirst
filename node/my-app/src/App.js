@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
 import Footer from './components/Footer'
 import Counter from './components/Counter'
-import Login from './components/account/Login'
+import LoginStud from './components/account/LoginStud'
 import LoginProf from './components/account/LoginProf'
 import Main from './components/main/Main'
-import { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
 
 
 function App() {
- 
-
   return (
-    <div className="App">
-      <Login/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/main" element={<Main/>} />
+          <Route exact path="/login" element={<LoginStud/>} />
+          <Route exact path="/login_prof" element={<LoginProf/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
 
 export default App;
