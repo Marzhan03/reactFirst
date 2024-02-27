@@ -19,7 +19,7 @@ const MainNavbar = () => {
 
     return (
         // <Row>
-        <Row className={`mx-0 ${mainNavbarStyles.bgNavbar}`}>
+        <Row className={``}>
             <Col className={`d-flex justify-content-center align-items-center py-3`} lg={6} md={12} sm={12}>
                 <div className='d-flex justify-content-center align-items-center me-5'>
                     <Image src={logoImage} style={{ width: '50px', height: '50px' }} alt="React Logo" className={styles.logo_png} />
