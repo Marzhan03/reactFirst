@@ -1,44 +1,26 @@
 .circleBackground {
  
-  width: 450px;
-  height: 450px;
+  width: 575px;
+  height: 575px;
   background-color: #F5FDFF;
   border-radius: 50%;
-  margin-top: -555px;
-  margin-left: 75px;
+  margin-top: -633px;
+  margin-left: 93px;
   margin-bottom: 100px;
   z-index: 1;
 }
 
-
-
-
-
-
-.dropdownCard {
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, -100%);
-  width: 289px;
-  height: 179px;
-  background-color: #FFFFFF;
-  border-radius: 20px;
+@keyframes moveIcons {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-20px, -20px);
+  }
 }
 
-.customWidth {
-  /* transform: translate(10%, 10%); */
-  width: 76px;
-  height: 76px;
+.move-icons {
+  animation: moveIcons 0.3s forwards;
 }
 
-.customSet {
-  /* transform: translate(660%, 35%); */
-  width: 36px;
-  height: 36px;
-}
 
-.boldText {
-  font-weight: bold;
-  font-size: 24px;
-  margin-left: -20%;
-}

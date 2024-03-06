@@ -2,6 +2,12 @@
   background-color: #EAF8FC;
 }
 
+.back {
+  background-color: #EAF8FC;
+  height: 100vh;
+  width: 200vh;
+}
+
 .navbar {
   display: flex;
   padding-top: 15px;

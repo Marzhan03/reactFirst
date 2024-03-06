@@ -8,7 +8,7 @@ const LoginNavbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.navbar}>
-                <div><Image src={logoImage} alt="React Logo" className={styles.logo_png}  /></div>
+                <div><Image src={logoImage} alt="React Logo" className={`me-2 ${styles.logo_png}`}/></div>
                 <div className={styles.logo_title}>TANU PRO</div>     
             </div>
         </div>

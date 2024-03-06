@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { ArcElement } from "chart.js";
-import Chart from "chart.js/auto";
 
 const DoughnutChart = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const data = {
     labels: false,
     datasets: [{
-      data: [50, 50, 50, 50],
-      backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(1, 205, 0)'],
-      hoverOffset: 25,
-      cutout: '82%',
-      borderWidth: 25,
-      borderColor: '#D0EEF7'
+      data: [50, 65, 65, 50],
+      hoverOffset: 75,
+      cutout: '87%',
+      borderWidth: 15,
+      borderColor: '#EAF8FC'
     }]
   };
 
@@ -30,13 +27,26 @@ const DoughnutChart = () => {
     },
     elements: {
       arc: {
-        hoverBorderWidth: 0,
+        backgroundColor: ['#47DAAC', '#50D3FF', '#EB5652', '#FFD542'],
+        hoverBorderColor: ['rgba(71, 218, 172, 1)', 'rgba(80, 211, 255, 1)', 'rgba(235, 86, 82, 1)', 'rgba(255, 206, 86, 1)'], 
+        hoverBackgroundColor: ['rgba(71, 218, 172, 1)', 'rgba(80, 211, 255, 1)', 'rgba(235, 86, 82, 1)', 'rgba(255, 206, 86, 1)'],
+        hoverBorderWidth: 20,
+        hoverBorderRadius: 1,
+        borderSkipped: 'top' // установите направление треугольника
+      }
+    },
+    layout: {
+      padding: {
+        left: 25,
+        right: 25,
+        top: 25,
+        bottom: 25
       }
     }
   };
 
   return (
-    <div>
+    <div style={{ width: '760px', height: '760px' }}>
       <Doughnut data={data} options={options} />
     </div>
   );
